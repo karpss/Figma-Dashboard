@@ -9,19 +9,18 @@ import Footer from './Footer';
 
 const Dashboard = () => {
     
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-      };
+  
 
   return (
     <div className='grid-container' >
-        <div className="menu-icon" onClick={toggleMenu}>
+       <div className="menu-icon"  >
         <strong> &#9776;</strong>
       </div>
         <Navbar/>
+        
         <Sidemenu/>
+        
+        
         <Cards/>
         <Footer/>
         
